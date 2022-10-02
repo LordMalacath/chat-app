@@ -1,0 +1,36 @@
+.message {
+    margin-top: 20px;
+
+    p {
+        max-width: 60%;
+        padding: 10px;
+        border-radius: 10px;
+        color: black;
+        // box-shadow: ;
+    }
+
+    span {
+        display: block;
+    }
+}
+
+
+.userMessage {
+    text-align: end;
+
+    p {
+        display: inline-block;
+        text-align: left;
+        background-color: rgba(119, 230, 119, 0.75);
+    }
+
+}
+
+.receivedMessage {
+    // justify-content: flex-start;
+
+    p {
+        display: inline-block;
+        background-color: rgba(102, 116, 235, 0.75);
+    }
+}

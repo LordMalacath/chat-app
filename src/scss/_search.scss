@@ -1,0 +1,16 @@
+.search {
+    flex: 0 1;
+    border-bottom: #7a73c7 1px solid;
+    display: flex;
+    flex-direction: column;
+
+    form {
+        display: flex;
+
+        input {
+            border-radius: 0;
+            flex: 1 1;
+        }
+    }
+
+}

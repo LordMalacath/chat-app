@@ -1,0 +1,26 @@
+.chat {
+    cursor: pointer;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-rows: 0.6fr 0.5fr;
+    justify-content: space-evenly;
+    gap: 5px;
+    grid-template-areas:
+        "user__avatar user__name"
+        "user__avatar chat__last-message";
+
+    .user__avatar {
+        grid-area: user__avatar;
+    }
+
+    .user__name {
+        grid-area: user__name;
+    }
+
+    &__last-mesage {
+        font-size: 1.1rem;
+        grid-area: chat__last-message;
+    }
+    
+}

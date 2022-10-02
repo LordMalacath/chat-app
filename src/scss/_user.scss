@@ -1,0 +1,18 @@
+.user {
+    flex: 0 1 75px;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    gap: 10px;
+    justify-content: space-between;
+    background-color: rgba(0, 0, 0, 0.075);
+    border-bottom: #7a73c7 1px solid;
+
+    .user__name {
+        flex: 1 1;
+    }
+
+    .user__avatar {}
+
+    button {}
+}
