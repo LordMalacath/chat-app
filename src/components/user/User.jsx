@@ -3,8 +3,9 @@ import { AuthContext } from "contexts/AuthContext";
 import { useContext } from "react";
 import Avatar from "./components/avatar/Avatar";
 import Name from "./components/name/Name";
+import "./style.scss"
 
-//---------------------------------------------------------
+//----------------------------------------------------------------
 
 export default function User() {
     const { user } = useContext(AuthContext)

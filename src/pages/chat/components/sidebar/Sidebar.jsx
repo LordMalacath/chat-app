@@ -1,0 +1,16 @@
+import User from "components/user/User";
+import SearchUser from "../searchUser/SearchUser";
+import ChatsList from "../chatsList/ChatsList"
+import "./style.scss"
+
+//----------------------------------------------------------------
+
+export default function Sidebar() {
+    return (
+        <div className="side">
+            <User />
+            <SearchUser />
+            <ChatsList />
+        </div>
+    )
+};

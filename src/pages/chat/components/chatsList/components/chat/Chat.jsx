@@ -3,6 +3,9 @@ import Name from "components/user/components/name/Name";
 import { ChatContext } from "contexts/ChatContext";
 import { useContext } from "react"
 import LastMessage from "./components/lastMessage/LastMessage";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function Chat({ data }) {
     const { dispatch } = useContext(ChatContext)

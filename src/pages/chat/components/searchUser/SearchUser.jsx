@@ -1,23 +1,18 @@
 import { useForm } from "react-hook-form";
-import { collection, getDocs, query, where } from "firebase/firestore";
 import SearchResult from "./components/searchResult/SearchResult";
-import { db } from "api/firebase/firebase";
 import { useState } from "react";
+import searchUser from "api/firebase/searchUser";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function SearchUser() {
     const [searchedUser, setSearchedUser] = useState()
     const { register, handleSubmit, reset } = useForm();
-    const onSubmit = async data => {
-        const usersRef = collection(db, "users");
-        const q = query(usersRef, where("name", "==", data.search));
-        try {
-            const querySnapshot = await getDocs(q);
-            querySnapshot.forEach((doc) => {
-                setSearchedUser(doc.data());
-            });
-            reset()
-        } catch (error) {
-        }
+
+    const onSubmit = (data) => {
+        searchUser(data, setSearchedUser);
+        reset()
     }
 
     return (

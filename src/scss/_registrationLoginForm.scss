@@ -1,0 +1,23 @@
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 300px;
+}
+
+#file {
+    display: none;
+}
+
+.formFile {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    gap: 10px;
+    font-weight: 400;
+    font-size: 0.9rem;
+
+    img {
+        width: 40px;
+    }
+}

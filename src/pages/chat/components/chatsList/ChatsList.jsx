@@ -3,6 +3,9 @@ import { AuthContext } from "contexts/AuthContext";
 import { doc, onSnapshot } from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";
 import Chat from "./components/chat/Chat";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function Chats() {
     const { user } = useContext(AuthContext)

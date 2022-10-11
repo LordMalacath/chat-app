@@ -3,6 +3,9 @@ import { ChatContext } from "contexts/ChatContext";
 import { doc, onSnapshot } from "firebase/firestore";
 import { useContext, useEffect, useState } from "react";
 import Message from "./components/message/Message";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function Messages() {
     const [messages, setMessages] = useState([])

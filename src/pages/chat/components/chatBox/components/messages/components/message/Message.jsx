@@ -1,5 +1,6 @@
+import "./style.scss"
 
-
+//----------------------------------------------------------------
 
 export default function Message({ messageData, messageClass }) {
 
