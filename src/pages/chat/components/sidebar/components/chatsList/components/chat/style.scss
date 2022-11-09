@@ -1,9 +1,11 @@
 .chat {
+    overflow: hidden;
+    width: 100%;
     cursor: pointer;
     padding: 5px;
     display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-template-rows: 0.6fr 0.5fr;
+    grid-template-columns: 50px 2fr;
+    grid-template-rows: 25px 25px;
     justify-content: space-evenly;
     gap: 5px;
     grid-template-areas:
@@ -19,5 +21,5 @@
     }
 
 
-    
+
 }

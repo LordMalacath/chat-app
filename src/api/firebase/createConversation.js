@@ -1,7 +1,10 @@
 import { db } from "api/firebase/firebase";
 import { doc, getDoc, serverTimestamp, setDoc, updateDoc } from "firebase/firestore";
 
+//----------------------------------------------------------------
+
 export const createConversation = async (user, searchedUser) => {
+
     const combinedUid = user.uid > searchedUser.uid
         ? user.uid + searchedUser.uid
         : searchedUser.uid + user.uid
@@ -25,7 +28,7 @@ export const createConversation = async (user, searchedUser) => {
 
             await updateDoc(doc(db, "user-chats", searchedUser.uid), {
                 [combinedUid + ".userInfo"]: {
-                    name: user.displayName,
+                    name: user.name,
                     uid: user.uid,
                     photoURL: user.photoURL,
                 },

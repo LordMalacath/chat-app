@@ -1,9 +1,8 @@
 $sendIcon: url("img/icons/icons8-email-send-64.png");
 
-
-
 #messageForm {
-
+    padding-bottom: 10px;
+    flex: 0 0 50px;
     display: flex;
     justify-content: space-between;
     align-items: center;

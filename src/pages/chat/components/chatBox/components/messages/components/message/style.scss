@@ -16,7 +16,7 @@
 
 
 .userMessage {
-    text-align: end;
+
 
     p {
         display: inline-block;
@@ -27,7 +27,7 @@
 }
 
 .receivedMessage {
-    // justify-content: flex-start;
+    text-align: end;
 
     p {
         display: inline-block;

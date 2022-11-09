@@ -22,7 +22,7 @@ export const sendMessage = async (user, data, message) => {
             [data.chatId + ".date"]: serverTimestamp()
         })
 
-        await updateDoc(doc(db, "user-chats", data.user.uid), {
+        await updateDoc(doc(db, "user-chats", data.searchedUser.uid), {
             [data.chatId + ".lastMessage"]: { message },
             [data.chatId + ".date"]: serverTimestamp()
         })
