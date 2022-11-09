@@ -1,0 +1,13 @@
+.chats-list {
+    padding: 5px;
+    flex: 1 0;
+    display: flex;
+    gap: 5px;
+    flex-direction: column;
+    overflow: scroll;
+    overflow-x: hidden;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}

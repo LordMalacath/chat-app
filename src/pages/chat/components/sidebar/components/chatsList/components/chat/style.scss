@@ -1,0 +1,25 @@
+.chat {
+    overflow: hidden;
+    width: 100%;
+    cursor: pointer;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: 50px 2fr;
+    grid-template-rows: 25px 25px;
+    justify-content: space-evenly;
+    gap: 5px;
+    grid-template-areas:
+        "user__avatar user__name"
+        "user__avatar chat__last-message";
+
+    .user__avatar {
+        grid-area: user__avatar;
+    }
+
+    .user__name {
+        grid-area: user__name;
+    }
+
+
+
+}

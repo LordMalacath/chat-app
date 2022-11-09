@@ -1,13 +1,16 @@
 import Messages from "./components/messages/Messages";
-import TextArea from "./components/textArea/TextArea";
-import NavBar from "./navBar/NavBar";
+import MessageInput from "./components/messageInput/MessageInput";
+import NavBar from "./components/navBar/NavBar";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function ChatBox() {
     return (
         <div className="chatBox">
             <NavBar />
             <Messages />
-            <TextArea />
+            <MessageInput />
         </div>
     )
 };

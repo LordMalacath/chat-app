@@ -1,0 +1,43 @@
+$sendIcon: url("img/icons/icons8-email-send-64.png");
+
+#messageForm {
+    padding-bottom: 10px;
+    flex: 0 0 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .sendFile {
+        flex: 1 0;
+    }
+
+    textarea {
+        flex: 5 1;
+        resize: none;
+        overflow-y: auto;
+        // box-shadow: none;
+        height: 50px;
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+
+    .send {
+        flex: 1 0 100px;
+        display: flex;
+        justify-content: space-between;
+
+        button {
+            display: flex;
+            align-items: center;
+            height: 40px;
+
+            img {
+                max-height: 90%;
+                object-fit: contain;
+            }
+        }
+    }
+
+}

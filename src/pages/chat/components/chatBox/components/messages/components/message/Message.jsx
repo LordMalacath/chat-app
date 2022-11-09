@@ -1,12 +1,13 @@
+import { TIME } from "const/date/momentDate";
+import "./style.scss"
 
+//----------------------------------------------------------------
 
-
-export default function Message({ messageData, messageClass }) {
-
+export default function Message({ messageData, messageTime, messageClass }) {
     return (
         <div className={messageClass} >
             <p>{messageData.message}</p>
-            <span>10:55</span>
+            <span>{TIME(messageTime)}</span>
         </div>
     )
 };

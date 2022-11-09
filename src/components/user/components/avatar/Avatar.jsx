@@ -1,3 +1,7 @@
+import "./style.scss"
+
+//----------------------------------------------------------------
+
 export default function Avatar({ photoUrl }) {
     return (
         <div className='user__avatar'>

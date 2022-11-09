@@ -1,0 +1,13 @@
+.login__body,
+.registration__body {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  padding: 20px 40px;
+  align-items: center;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 10px 10px 20px -15px rgba(0, 0, 0, 0.9);
+
+  .p {}
+}

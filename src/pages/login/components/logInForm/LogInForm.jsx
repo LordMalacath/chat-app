@@ -2,10 +2,13 @@ import { useForm } from "react-hook-form"
 import { signInWithEmailAndPassword } from "firebase/auth"
 import { auth } from "api/firebase/firebase";
 import { useNavigate } from "react-router-dom";
+import "./style.scss"
+
+//----------------------------------------------------------------
 
 export default function LogInForm() {
     const redirect = useNavigate()
-    const { register, handleSubmit, formState: { errors } } = useForm();
+    const { register, handleSubmit } = useForm();
     const onSubmit = async data => {
         try {
             await signInWithEmailAndPassword(auth, data.email, data.password)
