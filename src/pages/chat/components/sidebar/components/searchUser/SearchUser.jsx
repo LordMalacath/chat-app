@@ -7,12 +7,12 @@ import "./style.scss"
 //----------------------------------------------------------------
 
 export default function SearchUser() {
-    const [searchedUser, setSearchedUser] = useState()
+    const [searchedUser, setSearchedUser] = useState();
     const { register, handleSubmit, reset } = useForm();
 
     const onSubmit = (data) => {
         searchUser(data, setSearchedUser);
-        reset()
+        reset();
     }
 
     return (

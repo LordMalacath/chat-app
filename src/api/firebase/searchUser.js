@@ -1,7 +1,6 @@
 import { collection, getDocs, query, where } from "firebase/firestore";
 import { db } from "./firebase";
 
-//----------------------------------------------------------------
 
 const searchUser = async (data, setSearchedUser) => {
     const usersRef = collection(db, "users");
